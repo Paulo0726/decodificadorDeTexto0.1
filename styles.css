@@ -14,12 +14,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     display: flex;
     flex-direction: column;
     background-color: #F3F5FC;
+    margin: 0;
 }
 
 .apresentacao {
@@ -228,6 +230,7 @@ body {
 @media (max-width: 768px) {
     .apresentacao {
         flex-direction: column;
+        width: 100%;
         gap: 5px;
     }
     .imagem__topo {
@@ -275,6 +278,8 @@ body {
 @media (max-width: 425px) {
     .apresentacao {
         flex-direction: column;
+        margin: 0;
+        width: 100%;
     }
     .imagem__topo {
         margin: 18px 0 50px 135px;
