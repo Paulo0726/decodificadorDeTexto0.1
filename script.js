@@ -72,32 +72,6 @@ function descriptografar() {
     }
 }
 
-/*function copiarTexto() {
-    let textoCopiado = document.querySelector('.output__text').value.trim();
-
-    if (textoCopiado !== '') {
-        let textareaTemp = document.createElement('textarea');
-        textareaTemp.value = textoCopiado;
-        textareaTemp.setAttribute('readonly', '');
-        textareaTemp.style.position = 'fixed';
-        textareaTemp.style.opacity = 0;
-
-        document.body.appendChild(textareaTemp);
-        textareaTemp.select();
-        document.execCommand('copy');
-        document.body.removeChild(textareaTemp);
-
-        let outputTextarea = document.querySelector('.output__text');
-        outputTextarea.value = ''; 
-        document.querySelector('.botao__copiar').style.display = 'none';
-
-        outputTextarea.placeholder = 'Digite um texto que você deseja criptografar ou descriptografar...';
-        document.querySelector('.paragrafo__article').classList.remove('esconder');
-
-        ajustarAltura();
-    }
-}*/
-
 function copiarTexto() {
     let textoCopiado = document.querySelector('.output__text').value;
 
