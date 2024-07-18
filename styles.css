@@ -624,13 +624,13 @@ body {
     }
     .section__div {
         flex-direction: column;
-        margin-left: 0; /* Ajustado para zero em vez de valor fixo */
+        margin: 5px 10px 10px -25px; /* Ajustado para zero em vez de valor fixo */
     }
     .apresentacao__article {
         width: 100%; /* Ajustado para 100% em vez de valor fixo */
         max-width: 328px; /* Adicionado valor máximo para largura */
         height: 133px;
-        margin-left: 0; /* Ajustado para zero em vez de valor fixo */
+        margin: 5px 10px 10px -25px; /* Ajustado para zero em vez de valor fixo */
         transition: height 0.3s ease;
     }
     .paragrafo__article {
