@@ -11,7 +11,7 @@
     --font-1: 'inter', sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,21 +23,21 @@ body {
     background-color: #F3F5FC;
     margin: 0;
     width: 100%;
-    overflow-x: hidden; /* Adicionado para evitar rolagem horizontal */
+    overflow-x: hidden;
 }
 
 .apresentacao {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 30px;
     width: 100%;
-    flex-wrap: wrap; /* Permitir quebra de linha para telas menores */
+    flex-wrap: wrap;
 }
 
 .apresentacao__section {
-    width: 100%; /* Ajustado para 100% em vez de valor fixo */
-    max-width: 680px; /* Adicionado valor máximo para largura */
+    width: 100%;
+    max-width: 680px;
     margin: 30px;
 }
 
@@ -51,8 +51,8 @@ body {
 }
 
 .input__text {
-    width: 100%; /* Ajustado para 100% em vez de valor fixo */
-    max-width: 680px; /* Adicionado valor máximo para largura */
+    width: 100%;
+    max-width: 680px;
     height: 700px;
     margin-top: 90px;
     border: none;
@@ -78,27 +78,30 @@ body {
     gap: 3px;
     display: flex;
     align-items: center;
-    margin-left: 0; /* Ajustado para zero em vez de valor fixo */
+    margin-left: 0px;
 }
 
 .input__text::placeholder {
     background-color: var(--cor-1);
     color: var(--cor-3);
+    text-shadow: 3px 3px 3px rgb(10, 56, 113, 0.30);
 }
 
 .section__div {
     position: relative;
     display: flex;
     align-items: center;
-    width: 100%; /* Ajustado para 100% em vez de valor fixo */
-    max-width: 680px; /* Adicionado valor máximo para largura */
+    width: 100%;
+    max-width: 680px;
     gap: 24px;
-    margin: 10px 0 0 0; /* Ajustado para zero em vez de valor fixo */
+    margin: 10px 0 0 0;
+    padding-left: 0px;
 }
 
-.botao__criptografar, .botao__descriptografar {
+.botao__criptografar,
+.botao__descriptografar {
     width: 100%;
-    max-width: 328px; /* Adicionado valor máximo para largura */
+    max-width: 328px;
     height: 67px;
     color: white;
     font-family: var(--font-1);
@@ -109,6 +112,8 @@ body {
     background-color: var(--cor-3);
     border-radius: 24px;
     border: 1px solid transparent;
+    box-shadow: 5px 5px 10px rgb(10, 56, 113, 0.30);
+    text-shadow: 5px 5px 10px rgb(10, 56, 113, 0.30);
 }
 
 .botao__descriptografar {
@@ -118,27 +123,29 @@ body {
 
 .apresentacao__article {
     background-color: var(--cor-2);
-    width: 100%; /* Ajustado para 100% em vez de valor fixo */
-    max-width: 400px; /* Adicionado valor máximo para largura */
+    width: 100%;
+    max-width: 400px;
     height: 944px;
     border-radius: 32px;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    margin: 30px 0px 30px 0; /* Ajustado para zero em vez de valor fixo */
+    margin: 30px 0;
+    padding-left: 0px;
+    box-shadow: 5px 5px 10px rgb(10, 56, 113, 0.30);
 }
 
 .imagem__article {
-    width: 100%; /* Ajustado para 100% em vez de valor fixo */
-    max-width: 336px; /* Adicionado valor máximo para largura */
+    width: 100%;
+    max-width: 336px;
     height: 304px;
     margin-top: 243px;
 }
 
 .paragrafo__article {
-    width: 100%; /* Ajustado para 100% em vez de valor fixo */
-    max-width: 336px; /* Adicionado valor máximo para largura */
+    width: 100%;
+    max-width: 336px;
     height: 58px;
     font-family: var(--font-1);
     font-size: 1.5rem;
@@ -149,7 +156,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .esconder {
@@ -157,8 +164,8 @@ body {
 }
 
 .output__text {
-    width: 100%; /* Ajustado para 100% em vez de valor fixo */
-    max-width: 360px; /* Adicionado valor máximo para largura */
+    width: 100%;
+    max-width: 360px;
     height: 830px;
     margin-top: 10px;
     border-radius: 19px;
@@ -189,8 +196,8 @@ body {
 
 .botao__copiar {
     display: none;
-    width: 100%; /* Ajustado para 100% em vez de valor fixo */
-    max-width: 328px; /* Adicionado valor máximo para largura */
+    width: 100%;
+    max-width: 328px;
     height: 67px;
     color: var(--cor-3);
     font-family: var(--font-1);
@@ -201,12 +208,14 @@ body {
     background-color: var(--cor-4);
     border: 1px solid transparent;
     border-radius: 24px;
+    box-shadow: 5px 5px 10px rgb(10, 56, 113, 0.30);
+    text-shadow: 5px 5px 10px rgb(10, 56, 113, 0.30);
 }
 
 .rodape {
     display: flex;
     justify-content: center;
-    background-color: var(--cor-4);
+    background-color:var(--cor-4);
     padding: 1%;
     width: 100%;
 }
@@ -216,16 +225,16 @@ body {
     font-size: 1rem;
     color: #45565f;
     font-weight: 500;
+    text-shadow: 5px 5px 10px rgb(10, 56, 113, 0.30);
 }
 
-.botao__criptografar:hover, .botao__descriptografar:hover, .botao__copiar:hover {
+.botao__criptografar:hover,
+.botao__descriptografar:hover,
+.botao__copiar:hover {
     font-size: 1.1rem;
 }
 
 @media (max-width: 1200px) {
-    body {
-        width: 100%;
-    }
     .apresentacao {
         flex-direction: column;
         width: 100%;
@@ -237,34 +246,35 @@ body {
     .input__text {
         height: 400px;
         margin-top: 150px;
-        margin-left: 10px; 
-        width: calc(100% - 20px); /* Ajustado para ocupar a largura total menos margens */
+        margin-left: 10px;
+        width: calc(100% - 20px);
     }
     .input__text__paragrafo {
         margin-left: 10px;
+        padding-bottom: 5px;
     }
     .section__div {
-        margin: 10px;
+        margin: 0;
+        padding-left: 0;
     }
     .apresentacao__article {
-        /*width: calc(100% - 20px);
-        Ajustado para ocupar a largura total menos margens */
         width: 100%;
         max-width: 680px;
         height: 133px;
         gap: 3px;
         margin: 5px;
+        padding-left: 10px;
         transition: height 0.3s ease;
     }
     .paragrafo__article {
-        width: 100%; /* Ajustado para 100% em vez de valor fixo */
-        max-width: 680px; /* Adicionado valor máximo para largura */
+        width: 100%;
+        max-width: 680px;
         height: 20px;
         margin-top: 25px;
     }
     .output__text {
-        width: 100%; /* Ajustado para 100% em vez de valor fixo */
-        max-width: 640px; /* Adicionado valor máximo para largura */
+        width: 100%;
+        max-width: 640px;
         height: 133px;
         margin: 10px;
         border-radius: 0;
@@ -279,51 +289,55 @@ body {
         display: none;
     }
 }
-@media (max-width: 375px) {
-    body {
-        width: 100%;
-    }
+
+@media (max-width: 415px) {
     .apresentacao {
         flex-direction: column;
-        margin: 0;
         width: 100%;
+        overflow-x: hidden;
     }
     .imagem__topo {
-        margin: 18px 0 50px 0; /* Ajustado para zero em vez de valor fixo */
-        text-align: center; /* Centraliza a imagem */
+        margin: 18px 0 50px 0;
+        text-align: center;
     }
     .input__text {
-        width: 100%; /* Ajustado para 100% em vez de valor fixo */
-        max-width: 343px; /* Adicionado valor máximo para largura */
-        margin-left: 0; /* Ajustado para zero em vez de valor fixo */
+        width: 100%;
+        max-width: 343px;
+        margin-left: 15px;
         margin-top: 100px;
     }
     .input__text__paragrafo {
-        margin-left: 0; /* Ajustado para zero em vez de valor fixo */
+        margin-left: 15px;
     }
     .section__div {
         flex-direction: column;
-        margin: 0px; /* Ajustado para zero em vez de valor fixo */
+        margin: 3px;
+        padding-right: 68px; 
     }
     .apresentacao__article {
-        width: 100%; /* Ajustado para 100% em vez de valor fixo */
-        max-width: 328px; /* Adicionado valor máximo para largura */
+        width: 100%;
+        max-width: 328px;
         height: 133px;
-        margin: 0px; /* Ajustado para zero em vez de valor fixo */
+        margin: 0 0 10px;
+        margin-right: 60px;
         transition: height 0.3s ease;
     }
     .paragrafo__article {
-        width: 100%; /* Ajustado para 100% em vez de valor fixo */
-        max-width: 328px; /* Adicionado valor máximo para largura */
+        width: 100%;
+        max-width: 328px;
+        margin-right: 10px;
     }
     .output__text {
-        width: 100%; /* Ajustado para 100% em vez de valor fixo */
-        max-width: 308px; /* Adicionado valor máximo para largura */
-        margin: 30px;
+        width: 100%;
+        max-width: 308px;
+        margin: 30px; 
         height: 133px;
     }
+    .botao__copiar {
+        margin-right: 15px;
+    }
 }
-
+    
 
 
 
