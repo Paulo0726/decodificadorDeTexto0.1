@@ -2,21 +2,20 @@ function ajustarAltura() {
     let botaoCopiar = document.querySelector('.botao__copiar');
     let article = document.querySelector('.apresentacao__article');
     let output = document.querySelector('.output__text');
-    let maxWidth768 = window.matchMedia('(max-width: 768px)').matches;
-    let maxWidth375 = window.matchMedia('(max-width: 375px)').matches;
+    let maxWidth1200 = window.matchMedia('(max-width: 1200px)').matches;
+    let maxWidth415 = window.matchMedia('(max-width: 415px)').matches;
 
-    if (maxWidth768 || maxWidth375) { // Somente aplica as mudanças se a tela for <= 768px ou <= 375px
+    if (maxWidth1200 || maxWidth415) { 
         if (botaoCopiar.style.display === 'inline-block') {
-            if (maxWidth375) {
-                article.style.height = '270px'; // Altura do article para max-width: 375px quando botão copiar é visível
-            } else if (maxWidth768) {
-                article.style.height = '230px'; // Altura do article para max-width: 768px quando botão copiar é visível
+            if (maxWidth415) {
+                article.style.height = '280px'; 
+            } else if (maxWidth1200) {
+                article.style.height = '240px'; 
             }
         } else {
-            article.style.height = '133px'; // Altura padrão do article
+            article.style.height = '133px'; 
         }
-
-        output.style.height = '133px'; // Altura padrão do output
+        output.style.height = '133px'; 
     }
 }
 
@@ -75,27 +74,26 @@ function descriptografar() {
 function copiarTexto() {
     let textoCopiado = document.querySelector('.output__text').value;
 
-    // Cria um elemento textarea temporário e o adiciona ao DOM
     let textareaTemp = document.createElement('textarea');
     textareaTemp.value = textoCopiado;
-    textareaTemp.setAttribute('readonly', ''); // Para manter o campo somente leitura para segurança
-    textareaTemp.style.position = 'fixed'; // Corrige a posição do elemento
-    textareaTemp.style.opacity = 0; // Torna o elemento invisível
+    textareaTemp.setAttribute('readonly', ''); 
+    textareaTemp.style.position = 'fixed';
+    textareaTemp.style.opacity = 0; 
 
     document.body.appendChild(textareaTemp);
 
-    // Seleciona e copia o texto do elemento temporário
     textareaTemp.select();
     document.execCommand('copy');
 
-    // Remove o elemento temporário do DOM
     document.body.removeChild(textareaTemp);
 
     let outputTextarea = document.querySelector('.output__text');
     outputTextarea.value = ''; 
 
     document.querySelector('.botao__copiar').style.display = 'none';
-    outputTextarea.placeholder = ''; // Redefine o placeholder para uma string vazia
+    outputTextarea.placeholder = '';
     document.querySelector('.paragrafo__article').classList.remove('esconder');
 }
+
+
 
