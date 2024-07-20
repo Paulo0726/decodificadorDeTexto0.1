@@ -34,7 +34,10 @@ Você pode acessar a aplicação hospedada no Vercel através do seguinte link: 
 
 
 ### Exemplo de Criptografia
-![Exemplo de Criptografia](link-para-sua-imagem.png)
+<div style="display: flex;">
+  <img src="img/decodificadorDesktop2.png" alt="Descrição da Imagem 1" style="width: 50%;" />
+  <img src="img/decodificadorMobile2.png" alt="Descrição da Imagem 2" style="width: 15%;" />
+</div>
 
 ## Tecnologias Utilizadas
 
@@ -42,7 +45,6 @@ Você pode acessar a aplicação hospedada no Vercel através do seguinte link: 
 - CSS
 - JavaScript
 
-## Estrutura do Projeto
 
 
 
