@@ -28,8 +28,8 @@ Você pode acessar a aplicação hospedada no Vercel através do seguinte link: 
 
 ### Interface Principal
 <div style="display: flex;">
-  <img src="![decodificadorDesktop](https://github.com/user-attachments/assets/6f6392c7-d924-4dd9-a6ae-405390d91c33)" alt="Descrição da Imagem 1" style="width: 48%; margin-right: 4%;" />
-  <img src="link-para-sua-imagem2.png" alt="Descrição da Imagem 2" style="width: 48%;" />
+  <img src="img/decodificadorDesktop.png" alt="Descrição da Imagem 1" style="width: 50%;" />
+  <img src="img/decodificadorMobile.png" alt="Descrição da Imagem 2" style="width: 15%;" />
 </div>
 
 
